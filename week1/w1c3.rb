@@ -84,3 +84,20 @@ Oh, only two samples were given, but, it should be able to handle decoration wit
 
 Oh, a side note… You CAN copy and paste the sample solution for the 9x9 grid, and use that as test data, exactly as posted here (taking into account the “\n” that must exist as the last character of each line.
 =end
+
+def multiplication_table number
+  line = ''
+  max_number = number * number
+  (1..number).each do |row|
+    (1..number).each do |column|
+      line += " % #{max_number.to_s.length + 1}d" %(row * column)
+    end
+    line += "\n"
+  end
+  return line
+end
+
+table1 = multiplication_table 9
+table2 = multiplication_table 20
+puts table1
+puts table2
