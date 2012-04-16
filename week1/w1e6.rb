@@ -9,7 +9,7 @@
 
 
 def convert(temperature_fahrenheit)
-  (((temperature_fahrenheit.to_f - 32) * 5) / 9).round(2)
+  (temperature_fahrenheit.to_f - 32) * 5 / 9
 end
 
-puts convert(70) # prints 21.11
+puts "%.2f" % convert(70).round(2) # prints 21.11
