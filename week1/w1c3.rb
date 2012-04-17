@@ -85,19 +85,35 @@ Oh, only two samples were given, but, it should be able to handle decoration wit
 Oh, a side note… You CAN copy and paste the sample solution for the 9x9 grid, and use that as test data, exactly as posted here (taking into account the “\n” that must exist as the last character of each line.
 =end
 
-def multiplication_table number
-  line = ''
-  max_number = number * number
-  (1..number).each do |row|
-    (1..number).each do |column|
-      line += " % #{max_number.to_s.length + 1}d" %(row * column)
-    end
-    line += "\n"
+def multiplication_table(integer, heading = '', decorate = false)
+  max_integer = integer * integer
+  item_length = max_integer.to_s.length + 1
+  line_length = integer * item_length
+  heading_offset = line_length / 2 - heading.length / 2
+  if heading_offset < 1 
+    heading_offset = 1
   end
-  return line
+  line = ''
+  line << "\n" * 2
+  line << ' ' * heading_offset + heading + "\n" if heading.length > 0
+  line << ' ' + '=' * line_length + "\n" if decorate == true 
+  (1..integer).each do |row|
+    (1..integer).each do |column|
+      line << "% #{item_length}d" %(row * column)
+    end
+    line << "\n"
+  end
+  line << ' ' + '=' * line_length + "\n" if decorate == true   
 end
 
-table1 = multiplication_table 9
+table1 = multiplication_table 9, 'Times Table to 9', true
+table5 = multiplication_table 5, 'Times Table to 5', true
 table2 = multiplication_table 20
+table3 = multiplication_table 0, 'Test 0', true
+table4 = multiplication_table 1, 'Test 1', true
 puts table1
-puts table2
+puts
+puts table5
+#puts table2
+#puts table3
+#puts table4
