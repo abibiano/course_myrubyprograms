@@ -86,9 +86,10 @@ Oh, a side note… You CAN copy and paste the sample solution for the 9x9 grid, an
 =end
 
 def multiplication_table(integer, heading = '', decorate = false)
+  raise ArgumentError, 'Argument integer has to be >=0' if integer < 0
   max_integer = integer * integer
   item_length = max_integer.to_s.length + 1
-  line_length = integer * item_length
+  line_length = integer != 0 ? integer * item_length : item_length
   heading_offset = line_length / 2 - heading.length / 2
   if heading_offset < 1 
     heading_offset = 1
@@ -96,24 +97,33 @@ def multiplication_table(integer, heading = '', decorate = false)
   line = ''
   line << "\n" * 2
   line << ' ' * heading_offset + heading + "\n" if heading.length > 0
-  line << ' ' + '=' * line_length + "\n" if decorate == true 
-  (1..integer).each do |row|
-    (1..integer).each do |column|
-      line << "% #{item_length}d" %(row * column)
+  line << ' ' + '=' * line_length + "\n" if decorate
+  if integer != 0
+    (1..integer).each do |row|
+      (1..integer).each do |column|
+        line << "% #{item_length}d" %(row * column)
+      end
+      line << "\n"
     end
-    line << "\n"
+  else
+    line << "% #{item_length}d" % integer << "\n"
   end
-  line << ' ' + '=' * line_length + "\n" if decorate == true   
+  line << ' ' + '=' * line_length + "\n" if decorate
+  return line
 end
 
 table1 = multiplication_table 9, 'Times Table to 9', true
-table5 = multiplication_table 5, 'Times Table to 5', true
 table2 = multiplication_table 20
 table3 = multiplication_table 0, 'Test 0', true
 table4 = multiplication_table 1, 'Test 1', true
+table5 = multiplication_table 5, 'Times Table to 5', true
+
 puts table1
 puts
+puts table2
+puts
+puts table3
+puts
+puts table4
+puts
 puts table5
-#puts table2
-#puts table3
-#puts table4
