@@ -9,3 +9,7 @@
 # Line 2: Here you can learn Ruby.
 # Line 3: Along with other members.
 # >Exit code: 0
+
+
+s = "Welcome to the forum.\nHere you can learn Ruby.\nAlong with other members.\n"
+s.each_line.with_index {|line, index| puts "Line %i: %s" % [index + 1, line] }
