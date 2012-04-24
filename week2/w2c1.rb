@@ -7,3 +7,13 @@
 # Method prompt takes a string, and displays that string as a prompt, and returns what the user gives as an answer.
 #
 # Have fun with this.
+require 'prompt'
+
+while(input = prompt 'Year?')
+  break if input == "quit"
+  puts 'Enter a valid year (>1900 and <2100)' if /[^0-9]/.match(input) || \
+    input.to_i < 1900 || \
+    input.to_i > 2100
+  puts input
+end
+puts 'Good bye'

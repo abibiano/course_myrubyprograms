@@ -13,7 +13,7 @@ def leap_year?(year)
   year % 4 == 0 && year % 100 != 0 || year % 400 == 0
 end
 
-def minuts_in_a_year(year)
+def minutes_in_a_year(year)
   days = leap_year?(year) ? 366 : 365
   days * 24 * 60
 end
@@ -21,4 +21,4 @@ end
 puts "Year?: "
 STDOUT.flush  
 line = gets.chomp
-puts "The year %i has %i minuts" % [line, minuts_in_a_year(line.to_i)]
+puts "The year %i has %i minuts" % [line, minutes_in_a_year(line.to_i)]
