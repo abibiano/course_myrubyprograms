@@ -12,4 +12,4 @@
 
 
 s = "Welcome to the forum.\nHere you can learn Ruby.\nAlong with other members.\n"
-s.each_line.with_index {|line, index| puts "Line %i: %s" % [index + 1, line] }
+s.each_line.with_index(1) {|line, index| puts "Line %i: %s" % [index, line] }
