@@ -36,6 +36,13 @@
 # challenges with things learned from this week if you find it makes it simpler,
 # or more elegant! Blocks anyone?
 
+def format_string_with_lines(string_to_format)
+  item_length = string_to_format.each_line.count.to_s.length
+  formatted_string = ''
+  string_to_format.each_line.with_index(1) {|line, index| formatted_string << "Line %0#{item_length}i: %s" % [index, line] }
+  formatted_string
+end
+
 test_string = <<TESTSTRING
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 Duis imperdiet sem eu quam.
@@ -48,5 +55,5 @@ Sed non arcu vel libero posuere ultricies.
 Suspendisse tincidunt ullamcorper tellus.
 In ornare lacus ut turpis.
 TESTSTRING
-item_length = test_string.each_line.count.to_s.length
-test_string.each_line.with_index(1) {|line, index| puts "Line %0#{item_length}i: %s" % [index, line] }
+
+puts format_string_with_lines test_string
