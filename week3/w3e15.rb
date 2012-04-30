@@ -17,3 +17,9 @@
 #  [5, 6] 
 #
 #  4. Syntax Error
+
+for i, j in [[1, 2], [3, 4], [5, 6]]
+  p i
+  p j
+  p [i, j]
+end

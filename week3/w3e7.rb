@@ -70,5 +70,5 @@ puts "Line count %i" % line_count
 puts "Word count %i" % word_count
 puts "Sentence count %i" % sentence_count
 puts "Paragraph count %i" % paragraph_count
-puts "Average number of words per sentence %i" % (word_count / sentence_count)
-puts "Average number of sentences per paragraph %i" % (sentence_count / paragraph_count)
+puts "Average number of words per sentence %.2f" % (word_count.to_f / sentence_count)
+puts "Average number of sentences per paragraph %.2f" % (sentence_count.to_f / paragraph_count)

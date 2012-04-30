@@ -12,3 +12,4 @@
 #  record[:email] = “mail@satishtalim.com”
 #  record[:phone] = “919371006659”
 #  Rewrite, the above code in one line, the DRY (or Ruby) way.
+record = { :name => "Satish", :email => "mail@satishtalim.com", :phone => "919371006659" }
