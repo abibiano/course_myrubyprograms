@@ -6,3 +6,10 @@
 #  Display your current working directory.
 #  Go back to your original directory.
 #  Delete the tmp directory.
+
+puts Dir.pwd
+Dir.mkdir 'tmp'
+Dir.chdir 'tmp' do
+  puts Dir.pwd
+end
+Dir.rmdir 'tmp'
