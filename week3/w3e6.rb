@@ -18,15 +18,10 @@ def prompt(display, chomp = true)
   print "#{display} "
   STDOUT.flush
   line = gets
-  line.chomp! if chomp
+  chomp ? line.chomp! : line
 end
 
 until (input = prompt 'You enter: ') == 'BYE'
-  if input == input.upcase
-    puts "Grandma responds: NO, NOT SINCE %i!" % rand(1930..1950)
-  else
-    puts 'Grandma responds: HUH?! SPEAK UP, SONNY!'
-  end
-  
+  puts input == input.upcase ? "Grandma responds: NO, NOT SINCE %i!" % rand(1930..1950) : 'Grandma responds: HUH?! SPEAK UP, SONNY!'  
 end
 puts 'Good bye'

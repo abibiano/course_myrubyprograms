@@ -3,11 +3,10 @@
 #  of five print "Buzz". For numbers which are multiples of both three and five
 #  print "FizzBuzz". Discuss this in the FizzBuzz Forum.
 
-def calculate_value(number, multiple_text_hash)
+def calculate_value(number, multiple_text_hash = {:Fizz => 3 , :Buzz => 5 })
   output = ''
-  multiple_text_hash.each {|key, value| output += value if number % key == 0}
-  output = number if output.length == 0
-  output
+  multiple_text_hash.each {|key, value| output += key.to_s if number % value == 0}
+  output.size.zero? ? number : output
 end
 
-(1..100).each {|number| puts calculate_value(number, {3 => 'Fizz', 5 => 'Buzz'})}
+(1..100).each {|number| puts calculate_value(number, {Fizz: 3 , Buzz: 5, Dazz: 7, Kezz: 11})}

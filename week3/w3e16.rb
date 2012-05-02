@@ -8,4 +8,12 @@
 #  4. a.sort { |l, r| l.length <=> r.length }
 #  5. a.sort_by { |s| s }
 #  6. a.sort_by { |s| s.length }
-#  Discuss all the above exercises in the Week 3 forum.
+
+# a = ["Magazine", "Sunday", "Jump"]
+  
+puts a.sort OK
+# puts a.sort { |s| s } NOK
+# puts a.sort { |l, r| l <=> r } #=> OK
+# puts a.sort { |l, r| l.length <=> r.length } #=> NOK It sorts by the length of the items
+puts a.sortsort_by { |s| s } #=> OK
+# puts a.sort_by { |s| s.length } #=> NOK It sorts by the length of the items

@@ -57,6 +57,7 @@ end
 file_name = ARGV[0]
 
 content = File.read file_name
+content.gsub!(/\r\n?/, "\n")
 character_count = content.length
 character_count_no_spaces = content.gsub(' ', '').length
 line_count = content.lines.count

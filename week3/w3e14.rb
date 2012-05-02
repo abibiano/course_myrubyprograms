@@ -15,9 +15,9 @@ h = { "Ruby" => "Matz", "Perl" => "Larry", "Python" => "Guido" }
 
 # member? and inlcude? returns true if the given key is present in hash.
 # has_value? returns true if the given value is present for some key in hash.
-puts h.member?("Matz") # FALS
-puts h.member?("Python") # TRUE
-puts h.include?("Guido") # FALSE
-puts h.include?("Ruby") # TRUE
-puts h.has_value?("Larry") # TRUE
-# h.exists?("Perl") # Exception: Method exists? is not defined for hash
+1. h.member?("Matz") # FALS
+2. h.member?("Python") # TRUE
+3. h.include?("Guido") # FALSE
+4. h.include?("Ruby") # TRUE
+5. h.has_value?("Larry") # TRUE
+6. h.exists?("Perl") # Exception: Method exists? is not defined for hash
