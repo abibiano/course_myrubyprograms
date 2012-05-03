@@ -8,7 +8,7 @@
                 <root id="src.week1.dir"/>
                 <root id="src.week2.dir"/>
                 <root id="src.week3.dir"/>
-                <root id="src.test.dir"/>
+                <root id="src.week4.dir"/>
             </source-roots>
             <test-roots/>
         </data>
