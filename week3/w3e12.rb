@@ -16,4 +16,4 @@
 #  The number of participants who did not attempt Quiz 1 is x out of y total 
 #  participants.
 quiz = [0,0,0,1,0,0,1,1,0,1]
-puts "The number of participants who did not attempt Quiz 1 is %i out of %i total participants." % [quiz.inject(:+), quiz.count]
+puts "The number of participants who did not attempt Quiz 1 is %i out of %i total participants." % [quiz.count(0), quiz.count]
