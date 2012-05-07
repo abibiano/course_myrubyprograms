@@ -12,3 +12,17 @@
 #  pretend not to hear you (and not count it as a BYE).
 #  From Chris Pine#'s Book:
 #  http://pine.fm/LearnToProgram/?Chapter=06
+def prompt(display, chomp = true)
+  print "#{display} "
+  STDOUT.flush
+  line = gets
+  chomp ? line.chomp! : line
+end
+
+bye = 0
+while bye < 3 do
+  input = prompt 'You enter: '
+  bye = input == 'BYE' ? bye + 1 : 0
+  puts input == input.upcase ? "Grandma responds: NO, NOT SINCE %i!" % rand(1930..1950) : 'Grandma responds: HUH?! SPEAK UP, SONNY!'  
+end
+puts 'Good bye'
