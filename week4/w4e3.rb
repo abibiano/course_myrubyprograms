@@ -1,4 +1,6 @@
-#  3. Modify your Deaf Grandma program (written
+#  Exercise3. Call this program (p026zdeafgm2.rb)
+#  
+#  Modify your Deaf Grandma program (written
 #  earlier): What if grandma doesn't want you to leave?
 #  When you shout BYE, she could pretend not to hear
 #  you. Change your previous program so that you have
