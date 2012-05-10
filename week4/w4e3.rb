@@ -19,10 +19,15 @@ def prompt(display, chomp = true)
   chomp ? line.chomp! : line
 end
 
-bye = 0
-while bye < 3 do
-  input = prompt 'You enter: '
-  bye = input == 'BYE' ? bye + 1 : 0
-  puts input == input.upcase ? "Grandma responds: NO, NOT SINCE %i!" % rand(1930..1950) : 'Grandma responds: HUH?! SPEAK UP, SONNY!'  
+class Range
+  def sample
+    [*self].sample
+  end
 end
+
+
+while bye = (input = prompt 'You enter: ') == 'BYE' ? bye + 1 : 0 < 3 do 
+  puts input == input.upcase ? "Grandma responds: NO, NOT SINCE %i!" % (1930..1950).sample : 'Grandma responds: HUH?! SPEAK UP, SONNY!'  
+end
+
 puts 'Good bye'

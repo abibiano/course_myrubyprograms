@@ -27,12 +27,7 @@
 
 
 def get_new_files(old_inventory_file_name, new_inventory_file_name)
-  
-  old_inventory_file = File.readlines old_inventory_file_name
-  new_inventory_file = File.readlines new_inventory_file_name
-  result = ''
-  new_inventory_file.each {|item|  result << item if not old_inventory_file.include?(item)}
-  result
+  File.readlines(new_inventory_file_name) - File.readlines(old_inventory_file_name)
 end
 
 puts get_new_files('old-inventory.txt', 'new-inventory.txt')

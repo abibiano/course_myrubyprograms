@@ -11,12 +11,15 @@ class Dog
   end
   
   def bark
+    'Woof! Woof!'
   end
   
   def eat
+    'Crunch! Crunch!'
   end
   
   def chase_cat
+    'Miauuuuuuu!'
   end
   
   def to_s
@@ -24,6 +27,7 @@ class Dog
   end
 end
 
+puts Object.const_defined?('Dog') #=> checks if defined
 d = Dog.new('Leo')
 puts d
 puts d.eat

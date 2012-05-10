@@ -6,18 +6,12 @@
 #  puts "Perimeter is = #{r.perimeter}"
 
 class Rectangle
+  attr_accessor :area, :perimeter
   def initialize(height, width)
-      @height = height
-      @width = width
+      @area = width * height
+      @perimeter = 2 * width + 2 * height
   end
-  
-  def area
-    @width * @height
-  end
-  
-  def perimeter
-    2 * @width + 2 * @height
-  end
+
 end
 
 r = Rectangle.new(23.45, 34.67)
