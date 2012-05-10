@@ -23,7 +23,6 @@ class Cipher
       @cifer_square = create_cipher_square key
   end
   
-
   def create_key_phrase_array(key)
     key_phrase = key.upcase.gsub(/[^A-Z]/, '')
     key_phrase += ('A'..'Z').to_a.join 
@@ -43,5 +42,4 @@ class Cipher
 end
 
 c = Cipher.new('playfair example')
-
 c.cifer_square.each { |e| p e }
