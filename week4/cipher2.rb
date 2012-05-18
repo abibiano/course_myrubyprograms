@@ -3,14 +3,31 @@
 #  Example: Input Messae  : Hide the gold in the tree stump
 #          Formed Message: HIDETHEGOLDINTHETREXESTUMP
 
+
 class Cipher
   attr_accessor :cifer_square
   LETTERS = ('A'..'Z').to_a.join 
     
   def initialize(key)
-      @cifer_square = create_cipher_square key
+    @cifer_square = create_cipher_square key
   end
   
+  def form_message(message)
+    formed_message = message.upcase.gsub(/[^A-Z]/, '')
+    i = 0
+    replace_with_x = true
+    while i < formed_message.length
+      if formed_message[i] == formed_message[i + 1]
+        formed_message.insert(i + 1, replace_with_x ? 'X' : 'Z')
+        replace_with_x = !replace_with_x
+      end
+      i += 2
+    end
+    formed_message.length.even? ? formed_message : formed_message + 'X'
+  end
+  
+  private
+    
   def create_key_phrase_array(key)
     key_phrase = key.upcase.gsub(/[^A-Z]/, '')
     key_phrase += ('A'..'Z').to_a.join 
@@ -27,7 +44,11 @@ class Cipher
     end
     rows
   end
+  
+
 end
 
 c = Cipher.new('playfair example')
 c.cifer_square.each { |e| p e }
+
+puts c.form_message('Congress shall')
