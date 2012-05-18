@@ -5,10 +5,11 @@
         <data xmlns="http://www.netbeans.org/ns/ruby-project/1">
             <name>CoreRubyCourse</name>
             <source-roots>
-                <root id="src.week1.dir"/>
-                <root id="src.week2.dir"/>
-                <root id="src.week3.dir"/>
+                <root id="src.week5.dir"/>
                 <root id="src.week4.dir"/>
+                <root id="src.week3.dir"/>
+                <root id="src.week2.dir"/>
+                <root id="src.week1.dir"/>
             </source-roots>
             <test-roots/>
         </data>
