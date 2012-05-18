@@ -6,11 +6,12 @@
 #  >Exit code: 0
 #  # the original string was: "It was a dark and stormy night."
 
-class String
+class UnpredictableString < String
   def scramble
     chars.to_a.shuffle.join
   end
 end
-
-sentence = 'It was a dark and stormy night.'
+ 
+sentence = UnpredictableString.new('It was a dark and stormy night.')
 puts sentence.scramble
+puts sentence

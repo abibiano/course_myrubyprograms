@@ -30,10 +30,15 @@ class Shape
   end
 
   def play_sound
-    puts 'AIF Sound'
+    puts 'Playing AIF Sound'
   end
   
   def rotate
+    puts 'Rotating 360 degrees'
+  end
+  
+  def click
+    rotate
     play_sound
   end
 end
@@ -47,7 +52,6 @@ class Square < Shape
   
   def rotate
     puts 'Rotating square 360'
-    super
   end
   
   def area
@@ -63,7 +67,6 @@ class Circle < Shape
   end
   def rotate
     puts 'Rotating circle 360'
-    super
   end
   
   def area
@@ -81,7 +84,6 @@ class Triangle < Shape
  
   def rotate
     puts 'Rotating triangle 360'
-    super
   end
   
   def area
@@ -92,13 +94,13 @@ end
 center_point = Point.new(0, 0)
 circle1 = Circle.new(center_point, 5)
 puts "%s area: %f" % [circle1.class, circle1.area]
-circle1.rotate
+circle1.click
 puts
 square1 = Square.new(center_point, 2)
 puts "%s area: %f" % [square1.class, square1.area]
-square1.rotate
+square1.click
 puts
 triangle1 = Triangle.new(center_point, 3, 6)
 puts "%s area: %f" % [triangle1.class, triangle1.area]
-triangle1.rotate
+triangle1.click
 puts

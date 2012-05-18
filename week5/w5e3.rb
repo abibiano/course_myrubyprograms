@@ -45,7 +45,7 @@ is_alive = true
 while is_alive
   puts 'Enter a number: '
   STDOUT.flush
-  user_guess = gets.ch0omp
+  user_guess = gets.chomp
   # invoke the check_yourself method on the GameBoard object
   result = gb.check_yourself(user_guess)
   no_of_guesses += 1
