@@ -7,45 +7,43 @@
 #
 
 class Shape
+  def initialize(name = self.class.to_s.downcase)
+    @name = name || self.class.to_s
+  end
+  
   def play_sound
-    puts 'Playing AIF Sound'
+    'Playing AIF Sound'
   end
   
   def rotate
-    puts 'Rotating 360 degrees arround the center'
+    "Rotating %s clockwise 360 degrees arround the center" % @name
   end
   
   def click
-    rotate
-    play_sound
+    puts rotate
+    puts play_sound
   end
 end
 
 class Square < Shape 
-  def rotate
-    puts 'Rotating square 360 arround the center'
-  end
 end
 
 class Circle < Shape
   def rotate
-    puts 'Rotating circle 360 arround the center'
+    "Nothing done to rotate %s arround the center" % @name
   end
 end
 
 class Triangle < Shape
-  def rotate
-    puts 'Rotating triangle 360 arround the center'
-  end
 end
 
 class Amoeba < Shape
   def rotate
-    puts 'Rotating amoeba 360 around a point'
+    "Rotating %s 360 degrees arround a point" % @name
   end
   
   def play_sound
-    puts 'Playing HIF Sound'
+    'Playing HIF Sound'
   end
 end
 

@@ -12,95 +12,42 @@
 #  overloading not about UI.
 #
 
-class Point  
-  def initialize(x,y)  
-    @x, @y = x,y  
-  end  
-  attr_reader :x, :y    
-end 
-
 class Shape
-  attr_accessor :center
-  def initialize(center)
-    @center = center
+  def initialize(name = self.class.to_s.downcase)
+    @name = name || self.class.to_s
   end
   
-  def area
-    0
-  end
-
   def play_sound
-    puts 'Playing AIF Sound'
+    'Playing AIF Sound'
   end
   
   def rotate
-    puts 'Rotating 360 degrees'
+    "Rotating %s clockwise 360 degrees arround the center" % @name
   end
   
   def click
-    rotate
-    play_sound
+    puts rotate
+    puts play_sound
   end
 end
 
-class Square < Shape
-  attr_accessor :width
-  def initialize(center, width)
-    super(center)
-    @width = width
-  end
-  
-  def rotate
-    puts 'Rotating square 360'
-  end
-  
-  def area
-    @width**2
-  end
+class Square < Shape 
 end
 
 class Circle < Shape
-  attr_accessor :radius
-  def initialize(center, radius)
-    super(center)
-    @radius = radius
-  end
   def rotate
-    puts 'Rotating circle 360'
-  end
-  
-  def area
-    2 * Math::PI * @radius
+    "Nothing done to rotate %s arround the center" % @name
   end
 end
 
 class Triangle < Shape
-  attr_accessor :base, :heigth
-  def initialize(center, base, heigth)
-    super(center)
-    @base = base
-    @heigth = heigth    
-  end
- 
-  def rotate
-    puts 'Rotating triangle 360'
-  end
-  
-  def area
-    0.5 * @base * @heigth
-  end
 end
 
-center_point = Point.new(0, 0)
-circle1 = Circle.new(center_point, 5)
-puts "%s area: %f" % [circle1.class, circle1.area]
+circle1 = Circle.new()
 circle1.click
 puts
-square1 = Square.new(center_point, 2)
-puts "%s area: %f" % [square1.class, square1.area]
+square1 = Square.new()
 square1.click
 puts
-triangle1 = Triangle.new(center_point, 3, 6)
-puts "%s area: %f" % [triangle1.class, triangle1.area]
+triangle1 = Triangle.new()
 triangle1.click
-puts
