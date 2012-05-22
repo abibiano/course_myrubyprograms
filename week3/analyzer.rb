@@ -56,13 +56,18 @@ end
 
 file_name = ARGV[0]
 
+begin
 content = File.read file_name
+rescue Exception => e
+  puts "#{ex.class}: #{ex.message}"
+end
 character_count = content.length
 character_count_no_spaces = content.gsub(' ', '').length
 line_count = content.lines.count
 word_count = content.scan(/\S+/).count
 sentence_count = content.scan(/[.!?]/).count
 paragraph_count = content.scan(/\n{2}/).count
+
 
 puts "Character count %i" % character_count
 puts "Character count (excluding spaces) %i" % character_count_no_spaces

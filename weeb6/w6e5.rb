@@ -34,6 +34,8 @@
 #  open("game.sav", "r+b") { |f| f.write("9") }
 #
 #  load_game("game.sav") # RuntimeError: I suspect you of cheating.
-#  Since it's possible to modify a file's times with tools like the Unix touch command, you shouldn't depend on these methods to defend you against a skilled attacker actively trying to fool your program. 
+#  Since it's possible to modify a file's times with tools like the Unix touch 
+#  command, you shouldn't depend on these methods to defend you against a 
+#  skilled attacker actively trying to fool your program. 
 #
 #  Read up on sleep method and Time class.
