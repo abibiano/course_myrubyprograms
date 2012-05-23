@@ -2,7 +2,7 @@
 # and make it readable via an accessor.
 
 class Person
-  attr_reader :balance
+  attr_accessor :balance
   def initialize(balance = 0)
     @balance = balance
   end

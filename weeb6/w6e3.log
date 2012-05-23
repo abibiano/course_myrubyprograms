@@ -1,73 +1,10 @@
-# Logfile created on 2012-05-22 14:44:52 +0200 by logger.rb/31641
-I, [2012-05-22T14:44:52.708344 #5988]  INFO -- : Character count 6267
-I, [2012-05-22T14:44:52.708344 #5988]  INFO -- : Character count (excluding spaces) 5055
-I, [2012-05-22T14:44:52.708344 #5988]  INFO -- : Line count 121
-I, [2012-05-22T14:44:52.708844 #5988]  INFO -- : Word count 1093
-I, [2012-05-22T14:44:52.708844 #5988]  INFO -- : Sentence count 44
-I, [2012-05-22T14:44:52.708844 #5988]  INFO -- : Paragraph count 17
-I, [2012-05-22T14:44:52.708844 #5988]  INFO -- : Average number of words per sentence 24.84
-I, [2012-05-22T14:44:52.708844 #5988]  INFO -- : Average number of sentences per paragraph 2.59
-E, [2012-05-22T14:45:29.717244 #13112] ERROR -- : Argument error
-E, [2012-05-22T14:51:12.397266 #13008] ERROR -- : Argument error
-E, [2012-05-22T14:51:23.359958 #9568] ERROR -- : Error reading file sdf.txt. Errno::ENOENT: No such file or directory - sdf.txt
-E, [2012-05-22T14:52:01.100005 #8364] ERROR -- : Error reading file sdf.txt. Errno::ENOENT: No such file or directory - sdf.txt
-I, [2012-05-22T14:52:16.759636 #12900]  INFO -- : Character count 6267
-I, [2012-05-22T14:52:16.759636 #12900]  INFO -- : Character count (excluding spaces) 5055
-I, [2012-05-22T14:52:16.759636 #12900]  INFO -- : Line count 121
-I, [2012-05-22T14:52:16.760136 #12900]  INFO -- : Word count 1093
-I, [2012-05-22T14:52:16.760136 #12900]  INFO -- : Sentence count 44
-I, [2012-05-22T14:52:16.760136 #12900]  INFO -- : Paragraph count 17
-I, [2012-05-22T14:52:16.760136 #12900]  INFO -- : Average number of words per sentence 24.84
-I, [2012-05-22T14:52:16.760136 #12900]  INFO -- : Average number of sentences per paragraph 2.59
-I, [2012-05-22T14:53:35.127807 #15352]  INFO -- : nil
-I, [2012-05-22T14:59:18.501468 #10044]  INFO -- : Character count 6267
-I, [2012-05-22T14:59:18.501968 #10044]  INFO -- : Character count (excluding spaces) 5055
-I, [2012-05-22T14:59:18.502468 #10044]  INFO -- : Line count 121
-I, [2012-05-22T14:59:18.502468 #10044]  INFO -- : Word count 1093
-I, [2012-05-22T14:59:18.502468 #10044]  INFO -- : Sentence count 44
-I, [2012-05-22T14:59:18.502468 #10044]  INFO -- : Paragraph count 17
-I, [2012-05-22T14:59:18.502468 #10044]  INFO -- : Average number of words per sentence 24.84
-I, [2012-05-22T14:59:18.502468 #10044]  INFO -- : Average number of sentences per paragraph 2.59
-I, [2012-05-22T14:59:35.638895 #8996]  INFO -- : Character count 6267
-I, [2012-05-22T14:59:35.638895 #8996]  INFO -- : Character count (excluding spaces) 5055
-I, [2012-05-22T14:59:35.638895 #8996]  INFO -- : Line count 121
-I, [2012-05-22T14:59:35.639395 #8996]  INFO -- : Word count 1093
-I, [2012-05-22T14:59:35.639395 #8996]  INFO -- : Sentence count 44
-I, [2012-05-22T14:59:35.639395 #8996]  INFO -- : Paragraph count 17
-I, [2012-05-22T14:59:35.639395 #8996]  INFO -- : Average number of words per sentence 24.84
-I, [2012-05-22T14:59:35.639395 #8996]  INFO -- : Average number of sentences per paragraph 2.59
-E, [2012-05-22T15:02:27.573275 #13476] ERROR -- : Errno::ENOENT: No such file or directory - asd
-E, [2012-05-22T15:04:45.140783 #5044] ERROR -- : Errno::ENOENT: No such file or directory - asd
-E, [2012-05-22T15:08:03.435052 #5912] ERROR -- : Errno::ENOENT: No such file or directory - asd
-E, [2012-05-22T15:08:58.076337 #4084] ERROR -- : Errno::ENOENT: No such file or directory - asd
-E, [2012-05-22T15:09:03.498801 #7532] ERROR -- : Errno::ENOENT: No such file or directory - test.txt
-I, [2012-05-22T15:09:10.239838 #15956]  INFO -- : Character count 6267
-I, [2012-05-22T15:09:10.239838 #15956]  INFO -- : Character count (excluding spaces) 5055
-I, [2012-05-22T15:09:10.239838 #15956]  INFO -- : Line count 121
-I, [2012-05-22T15:09:10.239838 #15956]  INFO -- : Word count 1093
-I, [2012-05-22T15:09:10.240335 #15956]  INFO -- : Sentence count 44
-I, [2012-05-22T15:09:10.240335 #15956]  INFO -- : Paragraph count 17
-I, [2012-05-22T15:09:10.240335 #15956]  INFO -- : Average number of words per sentence Inf
-I, [2012-05-22T15:09:10.240335 #15956]  INFO -- : Average number of sentences per paragraph 2.59
-I, [2012-05-22T15:09:56.031461 #15296]  INFO -- : Character count 6267
-I, [2012-05-22T15:09:56.031958 #15296]  INFO -- : Character count (excluding spaces) 5055
-I, [2012-05-22T15:09:56.031958 #15296]  INFO -- : Line count 121
-I, [2012-05-22T15:09:56.031958 #15296]  INFO -- : Word count 1093
-I, [2012-05-22T15:09:56.031958 #15296]  INFO -- : Sentence count 44
-I, [2012-05-22T15:09:56.031958 #15296]  INFO -- : Paragraph count 17
-I, [2012-05-22T15:09:56.032455 #15296]  INFO -- : Average number of words per sentence 24.84
-I, [2012-05-22T15:09:56.032455 #15296]  INFO -- : Average number of sentences per paragraph 2.59
-E, [2012-05-22T15:09:58.705403 #17108] ERROR -- : File dosen't exists text.txt3
-E, [2012-05-22T15:10:18.902661 #13132] ERROR -- : File not exists text.txt3
-E, [2012-05-22T15:10:25.834595 #17840] ERROR -- : File not exists: text.txt3
-E, [2012-05-22T15:11:06.717166 #17996] ERROR -- : File not exists: text.txt3
-I, [2012-05-22T15:12:58.121411 #4960]  INFO -- : Character count 6267
-I, [2012-05-22T15:12:58.121411 #4960]  INFO -- : Character count (excluding spaces) 5055
-I, [2012-05-22T15:12:58.121411 #4960]  INFO -- : Line count 121
-I, [2012-05-22T15:12:58.121411 #4960]  INFO -- : Word count 1093
-I, [2012-05-22T15:12:58.121411 #4960]  INFO -- : Sentence count 44
-I, [2012-05-22T15:12:58.121910 #4960]  INFO -- : Paragraph count 17
-I, [2012-05-22T15:12:58.121910 #4960]  INFO -- : Average number of words per sentence 24.84
-I, [2012-05-22T15:12:58.121910 #4960]  INFO -- : Average number of sentences per paragraph 2.59
-E, [2012-05-22T15:13:16.972134 #16800] ERROR -- : Errno::ENOENT: No such file or directory - etee
-E, [2012-05-22T15:13:46.608742 #6924] ERROR -- : File not exists: text.txt3
+I, [2012-05-23T14:58:20.663914 #17888]  INFO -- : File analyzed: text.txt
+I, [2012-05-23T14:58:26.505414 #12056]  INFO -- : File analyzed: text.txt
+D, [2012-05-23T14:58:26.507414 #12056] DEBUG -- : Character count 6267
+D, [2012-05-23T14:58:26.507414 #12056] DEBUG -- : Character count (excluding spaces) 5055
+D, [2012-05-23T14:58:26.507414 #12056] DEBUG -- : Line count 121
+D, [2012-05-23T14:58:26.507914 #12056] DEBUG -- : Word count 1093
+D, [2012-05-23T14:58:26.507914 #12056] DEBUG -- : Sentence count 44
+D, [2012-05-23T14:58:26.507914 #12056] DEBUG -- : Paragraph count 17
+D, [2012-05-23T14:58:26.507914 #12056] DEBUG -- : Average number of words per sentence 24.84
+D, [2012-05-23T14:58:26.507914 #12056] DEBUG -- : Average number of sentences per paragraph 2.59

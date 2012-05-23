@@ -13,12 +13,13 @@
 #
 
 class Shape
-  def initialize(name = self.class.to_s.downcase)
+  def initialize(name = self.class.to_s.downcase, soundfile = 'soundfile.aif')
     @name = name || self.class.to_s
+    @soundfile = soundfile
   end
   
   def play_sound
-    'Playing AIF Sound'
+    "Playing Sound %s for %s" % [@soundfile, @name]
   end
   
   def rotate
@@ -43,11 +44,11 @@ end
 class Triangle < Shape
 end
 
-circle1 = Circle.new()
+circle1 = Circle.new
 circle1.click
 puts
-square1 = Square.new()
+square1 = Square.new
 square1.click
 puts
-triangle1 = Triangle.new()
+triangle1 = Triangle.new
 triangle1.click

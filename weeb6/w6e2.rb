@@ -12,32 +12,28 @@
 #  program. Use Symbols, wherever possible.
 
 class ID3V1
-  attr_reader :title, :artist, :album, :year, :comment
+  attr_reader :info
   def initialize(mp3file)
-
+    @info = Hash.new
     mp3file = File.open(mp3file, 'rb:binary') do |file|
       file.seek(-128, IO::SEEK_END)
       if file.read(3) == 'TAG'
-        @title = file.read(30)
-        @artist = file.read(30)
-        @album = file.read(30)
-        @year = file.read(4)
-        @comment = file.read(30)
-      else
-        @title = ''
-        @artist = ''
-        @album = ''
-        @year = ''
-        @comment = 'No ID3v1 tag'
+        @info = { 
+          :title => file.read(30), 
+          :artist => file.read(30),
+          :album => file.read(30),
+          :year => file.read(4),
+          :comment => file.read(30)}
       end
     end
-
   end
 end
 
 id3 = ID3V1.new('song.mp3')
-puts "Title  : %s" % id3.title
-puts "Artist : %s" % id3.artist
-puts "Album  : %s" % id3.album
-puts "Year   : %s" % id3.year
-puts "Comment: %s" % id3.comment
+puts <<EOF 
+Title  : #{id3.info[:title]}
+Artist : #{id3.info[:artist]}
+Album  : #{id3.info[:album]}
+Year   : #{id3.info[:year]}
+Comment: #{id3.info[:comment]}
+EOF
