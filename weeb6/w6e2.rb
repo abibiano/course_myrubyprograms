@@ -27,13 +27,18 @@ class ID3V1
       end
     end
   end
+  
+  def to_s
+<<EOF 
+Title  : #{@info[:title]}
+Artist : #{@info[:artist]}
+Album  : #{@info[:album]}
+Year   : #{@info[:year]}
+Comment: #{@info[:comment]}
+EOF
+  end
+  
 end
 
-id3 = ID3V1.new('song.mp3')
-puts <<EOF 
-Title  : #{id3.info[:title]}
-Artist : #{id3.info[:artist]}
-Album  : #{id3.info[:album]}
-Year   : #{id3.info[:year]}
-Comment: #{id3.info[:comment]}
-EOF
+
+puts ID3V1.new('song.mp3')
