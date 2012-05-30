@@ -3,10 +3,20 @@
 #  where the bug is and how to fix it, but you can’t or don’t want to change 
 #  the source file itself. Write code to do it. The original class is:
 #
-#  class DTRConvertor
-#    def convert(dollar_amount)
-#      dollar_amount * 40.0 # Bug here
-#    end
-#  end
-#  m = DTRConvertor.new
-#  puts m.convert(100.0)
+class DTRConvertor
+  def convert(dollar_amount)
+    dollar_amount * 40.0 # Bug here
+  end
+end
+m = DTRConvertor.new
+puts m.convert(100.0)
+
+# I have reopen the class and redefine the method convert with the bug solved
+class DTRConvertor
+  def convert(dollar_amount)
+    dollar_amount * 38.0 # Bug here rapaired
+  end
+end
+
+m = DTRConvertor.new
+puts m.convert(100.0)
