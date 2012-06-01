@@ -7,18 +7,23 @@
 #  for the Date class. You must account for leap years in this exercise.
 require 'date'
 
+ 
 def month_days(*args)
-  if args.size < 1  || args.size > 2  
-    raise ArgumentError,  'Arguments has to be month, year or month only' 
+  if args.size > 2
+    raise ArgumentError,  'Arguments has to many values'
+  elsif args.size == 0
+    month = Time.now.month
+    year = Time.now.year
+  elsif args.size == 1
+    month = args[0]
+    year = Time.now.year
   else
-    if args.size == 1
-      year = Time.now.year
-    else
-      year = args[1]
-    end
-    ((Date.new(year, args[0], 1) >> 1) - 1).day
+    month = args[0]
+    year = args[1]
   end
+  ((Date.new(year, month, 1) >> 1) - 1).day
 end
 
+puts month_days
 puts month_days(5) # 31 (May)
 puts month_days(2, 2000) # 29 (February 2000)

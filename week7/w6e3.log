@@ -1,0 +1,5 @@
+# Logfile created on 2012-06-01 11:15:25 +0200 by logger.rb/31641
+I, [2012-06-01T11:15:25.581685 #21900]  INFO -- : File analyzed: sdf
+E, [2012-06-01T11:15:25.581685 #21900] ERROR -- : Errno::ENOENT: No such file or directory - sdf
+E, [2012-06-01T11:15:25.581685 #21900] ERROR -- : ["I:/ruby/rubylearning/week6/w6e3.rb:12:in `read'", "I:/ruby/rubylearning/week6/w6e3.rb:12:in `initialize'", "I:/ruby/rubylearning/week6/w6e3.rb:70:in `new'", "I:/ruby/rubylearning/week6/w6e3.rb:70:in `<main>'"]
+      puts 

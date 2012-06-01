@@ -26,6 +26,7 @@ class TextAnalyzer
       
     rescue Exception => ex
       $LOG.error "#{ex.class}: #{ex.message}"
+      $LOG.error "#{ex.backtrace.inspect}"
       puts "#{ex.class}: #{ex.message}"
     end
   end

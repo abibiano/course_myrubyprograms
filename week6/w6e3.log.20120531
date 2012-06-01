@@ -1,0 +1,100 @@
+I, [2012-05-23T14:58:20.663914 #17888]  INFO -- : File analyzed: text.txt
+I, [2012-05-23T14:58:26.505414 #12056]  INFO -- : File analyzed: text.txt
+D, [2012-05-23T14:58:26.507414 #12056] DEBUG -- : Character count 6267
+D, [2012-05-23T14:58:26.507414 #12056] DEBUG -- : Character count (excluding spaces) 5055
+D, [2012-05-23T14:58:26.507414 #12056] DEBUG -- : Line count 121
+D, [2012-05-23T14:58:26.507914 #12056] DEBUG -- : Word count 1093
+D, [2012-05-23T14:58:26.507914 #12056] DEBUG -- : Sentence count 44
+D, [2012-05-23T14:58:26.507914 #12056] DEBUG -- : Paragraph count 17
+D, [2012-05-23T14:58:26.507914 #12056] DEBUG -- : Average number of words per sentence 24.84
+D, [2012-05-23T14:58:26.507914 #12056] DEBUG -- : Average number of sentences per paragraph 2.59
+I, [2012-05-30T11:06:56.772822 #9876]  INFO -- : File analyzed: text.txt
+D, [2012-05-30T11:06:56.789822 #9876] DEBUG -- : Character count 6267
+D, [2012-05-30T11:06:56.789822 #9876] DEBUG -- : Character count (excluding spaces) 5055
+D, [2012-05-30T11:06:56.789822 #9876] DEBUG -- : Line count 121
+D, [2012-05-30T11:06:56.789822 #9876] DEBUG -- : Word count 1093
+D, [2012-05-30T11:06:56.789822 #9876] DEBUG -- : Sentence count 44
+D, [2012-05-30T11:06:56.789822 #9876] DEBUG -- : Paragraph count 17
+D, [2012-05-30T11:06:56.790822 #9876] DEBUG -- : Average number of words per sentence 24.84
+D, [2012-05-30T11:06:56.790822 #9876] DEBUG -- : Average number of sentences per paragraph 2.59
+I, [2012-05-30T11:07:07.858822 #9264]  INFO -- : File analyzed: text.txt
+D, [2012-05-30T11:07:07.860822 #9264] DEBUG -- : Character count 6267
+D, [2012-05-30T11:07:07.860822 #9264] DEBUG -- : Character count (excluding spaces) 5055
+D, [2012-05-30T11:07:07.860822 #9264] DEBUG -- : Line count 121
+D, [2012-05-30T11:07:07.860822 #9264] DEBUG -- : Word count 1093
+D, [2012-05-30T11:07:07.860822 #9264] DEBUG -- : Sentence count 44
+D, [2012-05-30T11:07:07.860822 #9264] DEBUG -- : Paragraph count 17
+D, [2012-05-30T11:07:07.860822 #9264] DEBUG -- : Average number of words per sentence 24.84
+D, [2012-05-30T11:07:07.860822 #9264] DEBUG -- : Average number of sentences per paragraph 2.59
+I, [2012-05-30T11:07:33.161822 #7368]  INFO -- : File analyzed: text.txt
+D, [2012-05-30T11:07:33.163822 #7368] DEBUG -- : Character count 6267
+D, [2012-05-30T11:07:33.163822 #7368] DEBUG -- : Character count (excluding spaces) 5055
+D, [2012-05-30T11:07:33.163822 #7368] DEBUG -- : Line count 121
+D, [2012-05-30T11:07:33.163822 #7368] DEBUG -- : Word count 1093
+D, [2012-05-30T11:07:33.163822 #7368] DEBUG -- : Sentence count 44
+D, [2012-05-30T11:07:33.163822 #7368] DEBUG -- : Paragraph count 17
+D, [2012-05-30T11:07:33.164822 #7368] DEBUG -- : Average number of words per sentence 24.84
+D, [2012-05-30T11:07:33.164822 #7368] DEBUG -- : Average number of sentences per paragraph 2.59
+I, [2012-05-30T11:07:42.580822 #9476]  INFO -- : File analyzed: text.txt
+D, [2012-05-30T11:07:42.582822 #9476] DEBUG -- : Character count 6267
+D, [2012-05-30T11:07:42.582822 #9476] DEBUG -- : Character count (excluding spaces) 5055
+D, [2012-05-30T11:07:42.582822 #9476] DEBUG -- : Line count 121
+D, [2012-05-30T11:07:42.582822 #9476] DEBUG -- : Word count 1093
+D, [2012-05-30T11:07:42.582822 #9476] DEBUG -- : Sentence count 44
+D, [2012-05-30T11:07:42.582822 #9476] DEBUG -- : Paragraph count 17
+D, [2012-05-30T11:07:42.582822 #9476] DEBUG -- : Average number of words per sentence 24.84
+D, [2012-05-30T11:07:42.582822 #9476] DEBUG -- : Average number of sentences per paragraph 2.59
+I, [2012-05-30T11:13:10.935822 #8704]  INFO -- : File analyzed: text.txt
+E, [2012-05-30T11:13:10.937822 #8704] ERROR -- : NameError: undefined local variable or method `word_count' for #<TextAnalyzer:0x2d32910 @statistics={}>
+I, [2012-05-30T11:13:51.925822 #4672]  INFO -- : File analyzed: text.txt
+E, [2012-05-30T11:13:51.938822 #4672] ERROR -- : NoMethodError: undefined method `to_f' for :word_count:Symbol
+I, [2012-05-30T11:14:07.273822 #8528]  INFO -- : File analyzed: text.txt
+E, [2012-05-30T11:14:07.275822 #8528] ERROR -- : NoMethodError: undefined method `to_f' for :word_count:Symbol
+I, [2012-05-30T11:14:30.451822 #10036]  INFO -- : File analyzed: text.txt
+E, [2012-05-30T11:14:30.452822 #10036] ERROR -- : NoMethodError: undefined method `to_f' for [:word_count]:Array
+I, [2012-05-30T11:14:41.857822 #9332]  INFO -- : File analyzed: text.txt
+E, [2012-05-30T11:14:41.858822 #9332] ERROR -- : NoMethodError: undefined method `to_f' for [:word_count]:Array
+I, [2012-05-30T11:15:20.060822 #10232]  INFO -- : File analyzed: text.txt
+E, [2012-05-30T11:15:20.062822 #10232] ERROR -- : TypeError: Array can't be coerced into Float
+I, [2012-05-30T11:15:53.240822 #10008]  INFO -- : File analyzed: text.txt
+E, [2012-05-30T11:15:53.242822 #10008] ERROR -- : NameError: undefined local variable or method `character_count' for #<TextAnalyzer:0x2c22768>
+I, [2012-05-30T11:16:11.203822 #7364]  INFO -- : File analyzed: text.txt
+E, [2012-05-30T11:16:11.205822 #7364] ERROR -- : NameError: undefined local variable or method `character_count' for #<TextAnalyzer:0x2be1308>
+I, [2012-05-30T11:17:36.690822 #8476]  INFO -- : File analyzed: text.txt
+E, [2012-05-30T11:17:36.692822 #8476] ERROR -- : NameError: undefined local variable or method `character_count' for #<TextAnalyzer:0x2d11298>
+I, [2012-05-30T11:18:39.208822 #8208]  INFO -- : File analyzed: text.txt
+E, [2012-05-30T11:18:39.210822 #8208] ERROR -- : NameError: undefined local variable or method `report' for #<TextAnalyzer:0x2c525e8>
+I, [2012-05-30T11:19:04.095822 #9504]  INFO -- : File analyzed: text.txt
+E, [2012-05-30T11:19:04.096822 #9504] ERROR -- : NoMethodError: undefined method `report' for #<TextAnalyzer:0x2cf2578>
+I, [2012-05-30T11:19:21.175822 #9880]  INFO -- : File analyzed: text.txt
+E, [2012-05-30T11:19:21.176822 #9880] ERROR -- : NameError: undefined local variable or method `report' for #<TextAnalyzer:0x2c52e10>
+I, [2012-05-30T11:19:46.441822 #4672]  INFO -- : File analyzed: text.txt
+I, [2012-05-30T11:19:57.358822 #9560]  INFO -- : File analyzed: text.txt
+D, [2012-05-30T11:19:57.361822 #9560] DEBUG -- : Character count                          : 6267
+Character count (excluding spaces)       : 5055
+Line count                               : 121
+Word count                               : 1093
+Sentence count                           : 44
+Paragraph count                          : 17
+Average number of words per sentence     : 24.84
+Average number of sentences per paragraph: 0.0
+
+I, [2012-05-30T11:21:35.899822 #9644]  INFO -- : File analyzed: text.txt
+D, [2012-05-30T11:21:35.901822 #9644] DEBUG -- : #<Enumerator: "Character count                          : 6267\nCharacter count (excluding spaces)       : 5055\nLine count                               : 121\nWord count                               : 1093\nSentence count                           : 44\nParagraph count                          : 17\nAverage number of words per sentence     : 24.84\nAverage number of sentences per paragraph: 0.0\n":each_line>
+I, [2012-05-30T11:22:10.921822 #9928]  INFO -- : File analyzed: text.txt
+D, [2012-05-30T11:22:10.926822 #9928] DEBUG -- : Character count                          : 6267
+
+D, [2012-05-30T11:22:10.926822 #9928] DEBUG -- : Character count (excluding spaces)       : 5055
+
+D, [2012-05-30T11:22:10.926822 #9928] DEBUG -- : Line count                               : 121
+
+D, [2012-05-30T11:22:10.926822 #9928] DEBUG -- : Word count                               : 1093
+
+D, [2012-05-30T11:22:10.926822 #9928] DEBUG -- : Sentence count                           : 44
+
+D, [2012-05-30T11:22:10.926822 #9928] DEBUG -- : Paragraph count                          : 17
+
+D, [2012-05-30T11:22:10.926822 #9928] DEBUG -- : Average number of words per sentence     : 24.84
+
+D, [2012-05-30T11:22:10.926822 #9928] DEBUG -- : Average number of sentences per paragraph: 0.0
+
